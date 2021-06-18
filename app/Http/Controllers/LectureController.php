@@ -8,13 +8,12 @@ use Illuminate\Http\Request;
 class LectureController extends Controller
 {
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
+     * Lecture一覧
+     * @return Lecture[]|\Illuminate\Database\Eloquent\Collection
      */
     public function index()
     {
-        //
+        return Lecture::all();
     }
 
     /**
