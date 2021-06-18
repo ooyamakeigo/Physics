@@ -11,6 +11,6 @@ class LectureSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(\App\Lecture::class, 10)->create();
     }
 }
